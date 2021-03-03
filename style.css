@@ -1,0 +1,205 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* COLORS *****
+    purple: #682D45;
+    dark-green: #283C27;
+*/
+
+/* FONTS ******
+    font-family: 'Lato', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+body {
+    background-image: linear-gradient(rgba(255,255,255,.15), rgba(255,255,255.15)), 
+                      url("./assets/leather_background.jpg");
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    background: #283C27;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    font-size: 18px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+
+nav {
+    background: #fff;
+    padding: .3rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    background: url("./assets/logo_100x110.svg");
+    width: 70px;
+    height: 77px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    display: block;
+    margin: 0 1rem;
+    color: #682D45;
+    font-weight: 700;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    max-height: 500px;
+}
+
+.hero-text {
+    /* max-height: 650px; */
+
+    background: #682D45;
+}
+
+.hero-text h1 {
+    padding: 3.5rem;
+    color: #fff;
+}
+
+.hero img {
+    width: 450px;
+    height: 500px;
+}
+
+/* MAIN CONTENT */
+
+article {
+    margin: 1rem 0;
+}
+
+.article-wrapper {
+    display: flex;
+    color: white;
+}
+
+article h3 {
+    margin-bottom: 2rem;
+}
+
+article .column {
+    margin: 2rem;
+}
+
+article .column:last-of-type, article .column:first-of-type {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+article img {
+    width: 350px;
+    height: 500px;
+}
+
+article .article-info {
+    padding: 2rem;
+}
+
+article:nth-of-type(odd) .article-info {
+    background: #682D45;
+}
+
+article:nth-of-type(even) .article-info {
+    background: #283C27;
+}
+
+article:nth-of-type(even) .article-info button {
+    background: #682D45;
+}
+
+.article-info button {
+    margin-top: 2rem;
+}
+
+.column-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.column-heading h2 {
+    padding: 2rem;
+    background: #682D45;
+    margin-bottom: 2rem;
+}
+
+.column-heading img {
+    height: 500px;
+}
+
+
+
+
+
