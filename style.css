@@ -42,8 +42,11 @@ time, mark, audio, video {
 
 
 body {
-    background-image: linear-gradient(rgba(255,255,255,.15), rgba(255,255,255.15)), 
-                      url("./assets/leather_background.jpg");
+    background-image: linear-gradient(
+      rgba(255,255,255,.5),
+        rgba(255,255,255,.5)), 
+        url("./assets/leather_background.jpg");
+    background-size: cover;
     font-family: 'Lato', sans-serif;
 }
 
