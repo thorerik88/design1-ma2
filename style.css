@@ -68,7 +68,7 @@ p {
 
 .wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
 
 /* NAVBAR */
@@ -112,6 +112,7 @@ nav .logo {
 .hero {
     display: flex;
     max-height: 500px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.6);
 }
 
 .hero-text {
