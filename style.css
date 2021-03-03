@@ -71,6 +71,7 @@ button {
     color: white;
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);
     font-size: 18px;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -150,16 +151,20 @@ article h3 {
 
 article .column {
     margin: 2rem;
+    flex: 1;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.6);
 }
 
 article .column:last-of-type, article .column:first-of-type {
     margin-right: 0;
     margin-left: 0;
+    box-shadow: none;
 }
 
 article img {
-    width: 350px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.6);
 }
 
 article .article-info {
@@ -167,14 +172,14 @@ article .article-info {
 }
 
 article:nth-of-type(odd) .article-info {
-    background: #682D45;
-}
-
-article:nth-of-type(even) .article-info {
     background: #283C27;
 }
 
-article:nth-of-type(even) .article-info button {
+article:nth-of-type(even) .article-info {
+    background: #682D45;
+}
+
+article:nth-of-type(odd) .article-info button {
     background: #682D45;
 }
 
@@ -186,17 +191,21 @@ article:nth-of-type(even) .article-info button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
 }
 
 .column-heading h2 {
-    padding: 2rem;
+    padding: 2.8rem;
     background: #682D45;
     margin-bottom: 2rem;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.6);
+}
+
+article:nth-of-type(odd) .column-heading h2 {
+    background: #283C27;
 }
 
 .column-heading img {
-    height: 500px;
+    max-height: 350px;
 }
 
 
