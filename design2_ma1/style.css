@@ -73,7 +73,7 @@ a:hover {
 
 .wrapper {
     max-width: 1200px;
-    margin: 3rem auto;
+    margin: 5rem auto;
 }
 
 /* NAVBAR */
@@ -103,8 +103,18 @@ nav .logo {
 .nav-menu a {
     display: block;
     margin: 0 1rem;
+    padding: 1rem;
     color: #682D45;
     font-weight: 700;
+}
+
+.nav-menu a:hover {
+    text-decoration: none;
+    background: rgba(0,0,0,.3);
+}
+
+.nav-menu a.active {
+    text-decoration: underline;
 }
 
 /* HERO */
@@ -222,7 +232,7 @@ nav .logo {
 /* PRODUCTS */
 
 .products {
-    margin: 3rem;
+    margin: 5rem 0;
     /* max-width: 500px; */
     display: flex;
     justify-content: center;
@@ -231,11 +241,13 @@ nav .logo {
 
 .product {
     padding: 2rem 0;
+    width: 100%;
     background: white;
 }
 
 .product img {
-    width: 360px;
+    /* max-width: 280px; */
+    max-height: 300px;
 }
 
 .product p {
@@ -260,6 +272,7 @@ nav .logo {
     border: none;
     width: 140px;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .product button span {
